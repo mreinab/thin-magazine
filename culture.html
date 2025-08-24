@@ -72,27 +72,30 @@
     padding-right: 12px;
   }
 
-  /* Responsive */
-  @media(max-width: 768px) {
-    .panel-culture img {
-      height: fit-content;
-    }
-    .panel-content h3 {
-      font-size: 1.4rem;
-      margin-bottom: 4px;
-    }
-    .panel-content p {
-      font-size: 0.9rem;
-    }
-      .culture-container {
-    margin-top: 165px;
-    padding-right: 0px;
+@media(max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Fuerza 1 columna completa */
+  }
+
+  .panel-culture img {
+    height: auto; /* mejor que fit-content en mobile */
+  }
+
+  .panel-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .panel-content p {
+    font-size: 0.9rem;
+  }
+
+  .culture-container {
+    margin-top: 220px;
+    padding-right: 0;
     flex-direction: column;
   }
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-  }
+}
 </style>
 </head>
 <body class="culture-page">
