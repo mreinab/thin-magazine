@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+font-family: 'Roboto', Helvetica, sans-serif;
   overflow-y: hidden; /* solo quitamos vertical */
 }
 
@@ -196,10 +196,12 @@ main {
   }
   /* Logo junto al menú hamburguesa */
   .logo-container {
+    width: fit-content;
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 1002;
+    margin-bottom: 40px;
   }
 
 .logo {
