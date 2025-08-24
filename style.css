@@ -47,7 +47,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
   text-transform: uppercase;
   border-bottom: 2.5px solid transparent; /* Línea invisible por defecto */
   transition: border-bottom 0.3s ease;  /* Animación suave */
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .menu a:hover,
@@ -77,8 +77,8 @@ main {
 }
 
 .description {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* Scroll horizontal */
