@@ -23,7 +23,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
 
 .logo {
  width: 100%;
- max-width: 175px;
+ max-width: 165px;
   object-fit: contain;
 }
 
@@ -164,6 +164,8 @@ main {
 .horizontal-scroll .panel a:hover::after {
   opacity: 1;
 }
+
+
 
 /* ---------------- MOBILE ---------------- */
 .hamburger {
