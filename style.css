@@ -240,6 +240,7 @@ body:not(.home) main {
   height: auto;
   transform-origin: center center;
   object-fit: contain;
+  max-width: 15vw;
 }
 
   /* Hamburger visible */
