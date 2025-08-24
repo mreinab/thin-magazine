@@ -13,6 +13,7 @@ position: relative;
 
 main {
     position: relative;
+    margin-bottom: 24px;
 }
 
 body.home main {
@@ -24,7 +25,6 @@ body.home main {
   right: 0;
   height: 100vh;
   overflow: hidden;
-  gap: 24px;
 }
 
 /* MAIN en ENTREVIEWS o resto de páginas */
@@ -35,7 +35,7 @@ body:not(.home) main {
   margin-left: auto;
   padding: 40px;
   height: auto;          /* o min-height: 100vh si quieres ocupar toda la pantalla */
-  overflow-y: hidden;      /* ¡aquí está la clave! */
+  overflow-y: auto;
 }
 
 /* Logotipo fijo */
@@ -214,6 +214,13 @@ body:not(.home) main {
     padding: 32px;
   }
   
+
+  body:not(.home) main {
+    margin-left: 0px;
+    padding: 32px;
+    width: 100%;
+  }
+
   body {
     overflow-y: auto;    /* permite scroll en todo el body */
   }
@@ -337,6 +344,10 @@ body:not(.home) main {
     font-size: 16px;
     text-align: left;
   }
+
+  .top-decor {
+    display: none;
+  }
 }
 
 
@@ -353,37 +364,46 @@ body:not(.home) main {
 /* Encabezado */
 .header-section {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
 .header-section .text-block {
-  max-width: 60%;
+  max-width: 70%;
 }
 
+
 .header-section .title {
-  font-size: 48px;
+  font-size: 42px;
   margin: 0 0 10px 0;
   line-height: 1.2;
 }
 
 .header-section .date {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   text-align: left;
 }
 
+.image-block {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
 .header-section .image-block img {
-  max-width: 220px;
+  max-width: 150px;
   height: auto;
-  border-radius: 4px;
+  margin: 24px;
 }
 
 /* Contenido en columnas */
 .content-section {
-  column-count: 2;
-  column-gap: 40px;
+  column-count: 3;
+  column-gap: 24px;
 }
 
 .content-section p,
@@ -396,13 +416,22 @@ body:not(.home) main {
 /* Responsive */
 @media (min-width: 1400px) {
   .content-section {
-    column-count: 3;
+    column-count: 4;
   }
 }
 
 @media (max-width: 768px) {
+
+    .image-block {
+        padding-top: 80px;
+    }
+
   .header-section {
     flex-direction: column;
+  }
+
+  .header-section .title {
+    font-size: 28px;
   }
 
   .header-section .text-block {
@@ -419,25 +448,15 @@ body:not(.home) main {
 }
 
 
-body {
-  overflow: auto; /* mantiene scroll funcional */
-  -ms-overflow-style: none;  /* IE y Edge antiguos */
-  scrollbar-width: none;      /* Firefox */
-}
-
 body::-webkit-scrollbar {
-  display: none;              /* Chrome, Safari y Edge modernos */
+  width: 6px;
 }
 
-/* Si quieres que un contenedor específico tenga scroll pero sin barra */
-.horizontal-scroll, 
-main {
-  overflow: auto;   /* mantiene scroll */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
 }
 
-.horizontal-scroll::-webkit-scrollbar,
-main::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.05);
 }
