@@ -327,7 +327,7 @@ main.interviews-container {
 
   .panel a .hover-content {
     position: relative;
-    bottom: 10px;
+    bottom: -100px;
     width: 100%;           /* ocupa todo el ancho del enlace */
     max-width: 100%;
     opacity: 1;            /* siempre visible */
@@ -344,9 +344,9 @@ main.interviews-container {
   }
 
   .hover-content .title-hover {
-    width: 70%;
+    width: 100%;
     font-size: 1.5rem;
-    line-height: 2.2rem;
+    line-height: 1.7rem;
     text-decoration: none !important;
     margin-bottom: 0px;
   }
