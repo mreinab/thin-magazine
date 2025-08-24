@@ -73,3 +73,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".menu a");
+
+  links.forEach((link) => {
+    const href = link.getAttribute("href");
+
+    // Si es home (index.html o vacío), NO la marcamos
+    if (
+      (href === "index.html" || href === "") &&
+      (currentPath === "" || currentPath === "index.html")
+    ) {
+      return; // excepción: no marcar home al inicio
+    }
+
+    // Si coincide la URL actual con el href del enlace → lo marcamos
+    if (href === currentPath) {
+      link.classList.add("active");
+    }
+  });
+});

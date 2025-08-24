@@ -18,12 +18,11 @@ font-family: 'Roboto', Helvetica, sans-serif;
   left: 0px;
   top: 0px;
   padding: 24px;
-  z-index: 1000;
 }
 
 .logo {
  width: 100%;
- max-width: 10vw;
+ max-width: 9.9vw;
  object-fit: contain;
 }
 
@@ -51,8 +50,15 @@ font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .menu a:hover,
-.menu a:active {
-  border-bottom: 2.5px solid black; /* Aparece suavemente al hacer hover */
+.menu a.active {
+  border-bottom: 2.5px solid black;
+}
+
+.top-decor {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 24px;
 }
 
 main {
@@ -77,8 +83,8 @@ main {
 }
 
 .description {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* Scroll horizontal */
