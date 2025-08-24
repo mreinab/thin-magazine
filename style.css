@@ -15,7 +15,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
 .logo-container {
   position: fixed;
   width: fit-content;
-  width: 16vw;
+  width: 14vw;
   left: 0px;
   top: 0px;
   padding: 24px;
@@ -59,7 +59,7 @@ main {
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 16vw); /* lo que sobra del logo */
+  width: calc(100% - 14vw); /* lo que sobra del logo */
   bottom: 0;
   right: 0;
   height: 100vh; /* ocupa todo el alto */
