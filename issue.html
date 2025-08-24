@@ -3,11 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Título de la página · THIN MAGAZINE</title>
+  <title>ISSUE Nº1 · THIN MAGAZINE</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
   <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    main h1 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .gif-container img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    .email-form input[type="email"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 0px solid #ccc;
+      border-bottom: 2px solid #ccc;
+      width: 250px;
+      max-width: 80%;
+    }
+
+    .email-form button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 502px;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .page-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+      .order-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: end;
+        align-items: flex-end;
+      }
+
+    /* Responsive mobile adjustments */
+    @media (max-width: 480px) {
+
+      .page-content {
+        margin-top: 60px;
+      }
+
+      main h1 {
+        font-size: 1.5rem;
+      }
+
+      .email-form input[type="email"] {
+        width: 70%;
+      }
+
+      .email-form button {
+        margin-left: 5px;
+      }
+      
+      .order-container {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- LOGO -->
@@ -33,11 +115,17 @@
   <main>
     <span class="top-decor"><img src="/images/top-decor-thin.png"></span>
     <div class="page-content">
-      <h1>Título de esta sección</h1>
-      <p>
-        Aquí va el contenido de tu página.  
-        A diferencia del home, este `main` tiene scroll vertical normal.
-      </p>
+
+      <div class="gif-container">
+        <img src="/images/preorder.gif" alt="Preorder GIF">
+      </div>
+      <div class="order-container">
+      <h1>Pre-order Issue nº1 now</h1>
+      <form class="email-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">→</button>
+      </form>
+    </div>
     </div>
   </main>
 

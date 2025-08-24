@@ -140,18 +140,20 @@ body:not(.home) main {
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
   background-color: white;
-  border-radius: 12px;
-  padding: 24px;
-  min-width: 150px;
-  max-width: 250px;
-  width: 65%;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.title-hover, .excerpt {
+    display: none;
 }
 
 .panel a:hover .hover-content {
   opacity: 1;
 }
 
-.hover-content .title {
+.hover-content .title-hover {
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: left;
@@ -202,6 +204,14 @@ body:not(.home) main {
 /* Mobile */
 /* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
+
+    .title-hover {
+    display: flex;
+}
+
+.excerpt {
+    display: flex;
+}
 
   body.home main {
     position: relative;  /* ya no fijo en mobile */
@@ -327,9 +337,10 @@ body:not(.home) main {
     border: solid 5px white;
     background-color: white;
     margin: 0px;
+    height: fit-content;
   }
 
-  .hover-content .title {
+  .hover-content .title-hover {
     width: 70%;
     font-size: 1.5rem;
     line-height: 2.2rem;
@@ -377,7 +388,7 @@ body:not(.home) main {
 }
 
 
-.header-section .title {
+.header-section .title-interview {
   font-size: 42px;
   margin: 0 0 10px 0;
   line-height: 1.2;
@@ -432,7 +443,7 @@ body:not(.home) main {
     flex-direction: column;
   }
 
-  .header-section .title {
+  .header-section .title-interview {
     font-size: 28px;
   }
 
