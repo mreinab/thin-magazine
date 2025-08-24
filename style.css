@@ -25,12 +25,12 @@ body.home main {
   right: 0;
   height: 100vh;
   overflow: hidden;
+  gap: 24px
 }
 
 /* MAIN en ENTREVIEWS o resto de páginas */
 body:not(.home) main {
   position: relative;
-  display: block;
   width: calc(100% - 14vw);
   margin-left: auto;
   padding: 40px;
@@ -94,7 +94,7 @@ body:not(.home) main {
   flex-direction: column;   /* apilar elementos verticalmente */
   justify-content: flex-end; /* empuja los hijos hacia abajo */
   align-items: flex-start;   /* alinea a la izquierda */
-  height: 30%;              /* el contenedor debe tener altura */
+  height: 35%;              /* el contenedor debe tener altura */
   position: relative;
 }
 
@@ -107,7 +107,7 @@ body:not(.home) main {
 .horizontal-scroll {
   flex: 1;
   display: flex;
-  height: 70%;
+  height: 65%;
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
