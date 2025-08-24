@@ -14,7 +14,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
 /* Logotipo fijo */
 .logo-container {
   position: fixed;
-  width: 12vw;
+  width: 14vw;
   left: 0px;
   top: 0px;
   padding: 24px;
@@ -23,7 +23,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
 
 .logo {
  width: 100%;
- max-width: 12vw;
+ max-width: 10vw;
  object-fit: contain;
 }
 
