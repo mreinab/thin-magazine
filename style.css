@@ -19,12 +19,13 @@ font-family: 'Roboto', Helvetica, sans-serif;
   left: 0px;
   top: 0px;
   padding: 24px;
+  z-index: 1000;
 }
 
 .logo {
  width: 100%;
- max-width: 9vw;
-  object-fit: contain;
+ max-width: 10vw;
+ object-fit: contain;
 }
 
 /* Menú sticky */
