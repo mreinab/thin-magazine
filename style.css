@@ -14,7 +14,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
 /* Logotipo fijo */
 .logo-container {
   position: fixed;
-  width: 13vw;
+  width: 12vw;
   left: 0px;
   top: 0px;
   padding: 24px;
@@ -130,20 +130,20 @@ main {
 }
 
 .hover-content .title {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   text-align: left;
 }
 
 .hover-content .plus {
-  font-size: 3rem;
+  font-size: 2rem;
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .hover-content .excerpt {
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: right;
 }
 
