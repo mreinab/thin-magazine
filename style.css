@@ -23,7 +23,7 @@ font-family: 'Roboto', Helvetica, sans-serif;
 
 .logo {
  width: 100%;
- max-width: 12vw;
+ max-width: 11vw;
  object-fit: contain;
 }
 
@@ -130,9 +130,8 @@ main {
 }
 
 .hover-content .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
   text-align: left;
 }
 
