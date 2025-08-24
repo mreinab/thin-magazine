@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARTICLE · THIN MAGAZINE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* SOLO ESTILOS PARA LA PÁGINA DE ARTÍCULO */
+    .article-container {
+      margin-top: 0px;
+      padding: 0px 24px;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+    }
+
+    .article-header {
+    margin-top: 220px;
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .article-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .article-subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .article-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .article-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-images img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .article-content {
+        grid-template-columns: 1fr;
+      }
+
+      .article-images {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+      }
+
+      .article-images img {
+        flex: 0 0 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logotipo.png" alt="Logotipo" class="logo">
+    </a>
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="interviews.html">Interviews</a>
+    <a href="club.html">Club</a>
+    <a href="issue.html">Issue nº1</a>
+  </nav>
+
+  <!-- CONTENIDO DEL ARTÍCULO -->
+  <main class="article-container">
+
+    <!-- CONTENIDO EN DOS COLUMNAS -->
+    <div class="article-content">
+      <!-- TEXTO -->
+      <div class="article-text">
+    <div class="article-header">
+      <h1 class="article-title">ON YOUNG LOVE AND OTHER MOVIES</h1>
+
+      <h2 class="article-subtitle">by María Teller</h2>
+    </div>
+
+<p>
+  Cinema has a unique way of capturing fleeting moments, emotions that pass before we even recognize them. In the stories of young love, there is both the intensity of first discovery and the fragility of impermanence, a duality that makes these films resonate beyond their narratives.
+</p>
+
+<p>
+  Watching young characters navigate affection, longing, and hesitation feels like observing life itself under a magnifying glass. Every glance, every pause, and every shared silence is heightened, as if the camera understands the weight of a heartbeat in ways words often fail to.
+</p>
+
+<p>
+  These movies remind us that love is not always grand or heroic; it is intimate, awkward, and profoundly human. It thrives in small gestures — a note left on a desk, a shared umbrella in the rain, a glance that lingers too long. The storytelling is subtle, yet every frame carries emotional gravity.
+</p>
+
+<p>
+  Beyond romance, these films explore identity, friendship, and the pursuit of self-understanding. Young love is never isolated; it exists in the context of growth, mistakes, and the world around it, making the cinematic experience both personal and universal.
+</p>
+
+<p>
+  In revisiting these stories, one comes to appreciate the artistry behind the quiet moments — the camera’s gaze, the pacing, the music that underlines a fleeting smile. They are reminders that cinema, at its best, captures not just events, but feelings: delicate, transient, and unforgettable.
+</p>
+
+      </div>
+
+      <!-- IMÁGENES -->
+      <div class="article-images">
+        <img src="/images/culture3.jpg" alt="Fresh Lemons">
+        <img src="/images/img16.jpg" alt="Biodegradable Food Packaging">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

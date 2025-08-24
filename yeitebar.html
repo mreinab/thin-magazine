@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARTICLE · THIN MAGAZINE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* SOLO ESTILOS PARA LA PÁGINA DE ARTÍCULO */
+    .article-container {
+      margin-top: 0px;
+      padding: 0px 24px;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+    }
+
+    .article-header {
+    margin-top: 220px;
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .article-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .article-subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .article-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .article-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-images img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .article-content {
+        grid-template-columns: 1fr;
+      }
+
+      .article-images {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+      }
+
+      .article-images img {
+        flex: 0 0 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logotipo.png" alt="Logotipo" class="logo">
+    </a>
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="interviews.html">Interviews</a>
+    <a href="club.html">Club</a>
+    <a href="issue.html">Issue nº1</a>
+  </nav>
+
+  <!-- CONTENIDO DEL ARTÍCULO -->
+  <main class="article-container">
+
+    <!-- CONTENIDO EN DOS COLUMNAS -->
+    <div class="article-content">
+      <!-- TEXTO -->
+      <div class="article-text">
+    <div class="article-header">
+      <h1 class="article-title">YEITE: A MINIMALIST HAVEN IN THE HEART OF MADRID</h1>
+
+      <h2 class="article-subtitle">by María Teller</h2>
+    </div>
+<p>
+  In a quiet corner of Madrid, <em>Yeite</em> emerges as more than just a bar — it is a space where design, craft, and atmosphere converge into an intimate experience. Stepping inside, one immediately senses the balance between restraint and warmth, a careful dialogue between raw materials and refined details.
+</p>
+
+<p>
+  The walls are adorned with textures that speak of artisanship: polished wood, handmade ceramics, and subtle stone finishes. Light filters softly through curated fixtures, illuminating every angle with intention. Nothing is excessive, yet nothing is missing. Every object, from the stools to the bar counter, has been considered as part of a larger narrative.
+</p>
+
+<p>
+  Minimalism here does not mean emptiness; it means presence. The uncluttered design allows conversation to flow, flavors to resonate, and time to slow down. Visitors find themselves immersed in an atmosphere that feels both contemporary and timeless, where each sip and each detail become part of the ritual.
+</p>
+
+<p>
+  Yeite’s menu mirrors its aesthetic philosophy: crafted cocktails and small plates that celebrate purity and elegance. Ingredients are treated with respect, transformed into subtle compositions that echo the design of the space itself — simple in appearance, yet layered in essence.
+</p>
+
+<p>
+  In Madrid, a city known for its energy and noise, Yeite offers a pause. It is a reminder that sophistication does not need to shout, that beauty often lives in restraint, and that the most memorable places are those that leave space for people to simply be.
+</p>
+      </div>
+
+      <!-- IMÁGENES -->
+      <div class="article-images">
+        <img src="/images/img2.jpg" alt="Fresh Lemons">
+        <img src="/images/img13.jpg" alt="Biodegradable Food Packaging">
+        <img src="/images/img14.jpg" alt="Sustainable Eating">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARTICLE · THIN MAGAZINE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* SOLO ESTILOS PARA LA PÁGINA DE ARTÍCULO */
+    .article-container {
+      margin-top: 0px;
+      padding: 0px 24px;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+    }
+
+    .article-header {
+    margin-top: 220px;
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .article-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .article-subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .article-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .article-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-images img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .article-content {
+        grid-template-columns: 1fr;
+      }
+
+      .article-images {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+      }
+
+      .article-images img {
+        flex: 0 0 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logotipo.png" alt="Logotipo" class="logo">
+    </a>
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="interviews.html">Interviews</a>
+    <a href="club.html">Club</a>
+    <a href="issue.html">Issue nº1</a>
+  </nav>
+
+  <!-- CONTENIDO DEL ARTÍCULO -->
+  <main class="article-container">
+
+    <!-- CONTENIDO EN DOS COLUMNAS -->
+    <div class="article-content">
+      <!-- TEXTO -->
+      <div class="article-text">
+    <div class="article-header">
+      <h1 class="article-title">THE LIFE OF LEMONS <br> A BIODEGRADABLE STORY</h1>
+
+      <h2 class="article-subtitle">by Alice Karpool</h2>
+    </div>
+        <p>
+          Lemons, with their vibrant color and sharp flavor, have long been a symbol of freshness and vitality. 
+          Yet beyond their taste, lemons embody the cycle of life and sustainability. 
+          Their skin, pulp, and juice all serve unique purposes — from culinary traditions to natural cleaning.
+        </p>
+        <p>
+          In the same way, biodegradable food packaging mirrors this natural cycle. 
+          Designed to return safely to the earth, it challenges the dominance of plastics 
+          and opens a conversation about how we consume, preserve, and discard.
+        </p>
+        <p>
+          <strong>Sustainability is not a trend</strong> but a quiet revolution. 
+          From farm to table, and from lemon trees to compost bins, each step matters. 
+          The story of lemons and biodegradable food is not about innovation alone, 
+          but about reconnecting with rhythms that have always existed in nature.
+        </p>
+        <p>
+          By choosing wisely — whether it’s a fruit in season or packaging that dissolves back into soil — 
+          we embrace a lifestyle that is rich in essence and light in footprint.
+        </p>
+        <p>
+        By choosing wisely — whether it’s a fruit in season or packaging that dissolves back into soil — we embrace a lifestyle that is rich in essence and light in footprint.
+        </p>
+
+        <p>
+        This perspective challenges the way we understand value. A lemon is not only the sum of its taste or its market price, but also the result of time, climate, soil, and care. To consume it responsibly is to acknowledge the invisible labor of ecosystems and the balance they maintain.
+        </p>
+
+        <p>
+        Biodegradable food, in turn, carries a similar message: the recognition that nothing should be permanent when permanence leads to harm. A wrapper that disappears after serving its purpose, or a container that becomes part of the soil, reflects a philosophy of impermanence that has long existed in cultural traditions — from Japanese wabi-sabi to Mediterranean seasonality.
+        </p>
+
+        <p>
+        The life of lemons teaches us simplicity. They do not ask for more than sun and water, and they give back abundance. Biodegradable food asks us to rethink abundance too — to redefine it not as excess, but as harmony with cycles of renewal.
+        </p>
+
+        <p>
+        Ultimately, both lemons and biodegradable materials remind us of something essential: culture itself is biodegradable. It adapts, transforms, and returns to the roots from which it grew. In this recognition lies the possibility of a more elegant and sustainable way of living — one that celebrates taste, beauty, and responsibility in equal measure.
+        </p>
+
+      </div>
+
+      <!-- IMÁGENES -->
+      <div class="article-images">
+        <img src="/images/img9.jpg" alt="Fresh Lemons">
+        <img src="/images/img1.jpg" alt="Biodegradable Food Packaging">
+        <img src="/images/img10.jpg" alt="Sustainable Eating">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARTICLE · THIN MAGAZINE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* SOLO ESTILOS PARA LA PÁGINA DE ARTÍCULO */
+    .article-container {
+      margin-top: 0px;
+      padding: 0px 24px;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+    }
+
+    .article-header {
+    margin-top: 220px;
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .article-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .article-subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .article-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .article-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-images img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .article-content {
+        grid-template-columns: 1fr;
+      }
+
+      .article-images {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+      }
+
+      .article-images img {
+        flex: 0 0 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logotipo.png" alt="Logotipo" class="logo">
+    </a>
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="interviews.html">Interviews</a>
+    <a href="club.html">Club</a>
+    <a href="issue.html">Issue nº1</a>
+  </nav>
+
+  <!-- CONTENIDO DEL ARTÍCULO -->
+  <main class="article-container">
+
+    <!-- CONTENIDO EN DOS COLUMNAS -->
+    <div class="article-content">
+      <!-- TEXTO -->
+      <div class="article-text">
+    <div class="article-header">
+      <h1 class="article-title">RESHAPING THE FUTURE WITH GREAT WRAP</h1>
+
+      <h2 class="article-subtitle">by Alice Keller </h2>
+    </div>
+<p>
+  Great Wrap is not just a company; it is a movement. Founded on the belief that everyday materials should never harm the planet, the brand has redefined something as simple — and often overlooked — as cling film. What once was a symbol of waste and disposability now becomes a story of circularity and innovation.
+</p>
+
+<p>
+  At the heart of Great Wrap lies a single mission: to end plastic waste. Their biodegradable stretch film, crafted from food waste and compostable materials, offers an alternative that feels both radical and natural. It challenges industries to imagine packaging not as a problem, but as part of the solution.
+</p>
+
+<p>
+  The design of the product reflects the philosophy of the company — minimal, functional, and thoughtful. It does not shout, it whispers. Yet behind its quiet appearance lies years of research, experimentation, and the desire to change systems that once seemed immovable.
+</p>
+
+<p>
+  For the founders, the journey is deeply personal. They speak of their connection to the earth, of standing in fields and realizing that innovation must serve more than convenience. Every roll of Great Wrap is a reminder that materials can live, return, and regenerate without leaving a trace of harm.
+</p>
+
+<p>
+  In a world saturated by disposable culture, Great Wrap offers hope. It invites us to look at the objects we touch daily — the wrap that covers our food, the packaging that protects what we buy — and to ask ourselves: can this be different? Their answer is clear: yes. And in that yes lies the beginning of a new material revolution.
+</p>
+      </div>
+
+      <!-- IMÁGENES -->
+      <div class="article-images">
+        <img src="/images/img4.jpg" alt="Fresh Lemons">
+        <img src="/images/img3.jpg" alt="Biodegradable Food Packaging">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

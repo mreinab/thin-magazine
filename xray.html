@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARTICLE · THIN MAGAZINE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* SOLO ESTILOS PARA LA PÁGINA DE ARTÍCULO */
+    .article-container {
+      margin-top: 0px;
+      padding: 0px 24px;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+    }
+
+    .article-header {
+    margin-top: 220px;
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .article-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .article-subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .article-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .article-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-images img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .article-content {
+        grid-template-columns: 1fr;
+      }
+
+      .article-images {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+      }
+
+      .article-images img {
+        flex: 0 0 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logotipo.png" alt="Logotipo" class="logo">
+    </a>
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="interviews.html">Interviews</a>
+    <a href="club.html">Club</a>
+    <a href="issue.html">Issue nº1</a>
+  </nav>
+
+  <!-- CONTENIDO DEL ARTÍCULO -->
+  <main class="article-container">
+
+    <!-- CONTENIDO EN DOS COLUMNAS -->
+    <div class="article-content">
+      <!-- TEXTO -->
+      <div class="article-text">
+    <div class="article-header">
+      <h1 class="article-title">ON THE INVISIBLE BEAUTY OF ANIMAL STRUCTURES</h1>
+
+      <h2 class="article-subtitle">by John Net</h2>
+    </div>
+<p>
+  Beneath the surface of every creature lies a hidden architecture — an intricate framework that carries both fragility and strength. Through X-ray vision and advanced imaging, we uncover the silent poetry of skeletons, shells, and wings, a geometry of survival that often surpasses human design.
+</p>
+
+<p>
+  The wings of a bat, for instance, reveal veins and membranes stretched with mathematical precision, engineered not by architects but by evolution. The ribcage of a tiny bird shows a cathedral-like vault, balancing lightness with resilience. Even the spiral of a seashell, when seen through radiography, mirrors cosmic proportions found in galaxies and storms.
+</p>
+
+<p>
+  These inner blueprints remind us that beauty is not only external. The elegance of an animal’s structure lies in function refined over millennia: bones hollowed to reduce weight, joints designed for effortless movement, patterns that anticipate pressure and force. Nature creates without waste, building systems where every line serves a purpose.
+</p>
+
+<p>
+  Observing animals through X-ray imagery is to witness the harmony between form and necessity. It is a language without words, yet one that tells stories of adaptation, survival, and grace. Where humans build monuments of stone and steel, animals carry their monuments within — living architectures that dissolve back into the earth when their time ends.
+</p>
+
+<p>
+  In this perspective, the unseen becomes a source of wonder. The next time we encounter a bird in flight, a cat in motion, or a fish gliding underwater, we might imagine the hidden structures at work, the invisible artistry that sustains life. To look within is to celebrate a deeper kind of beauty: one that unites science, art, and the quiet intelligence of the natural world.
+</p>
+
+      </div>
+
+      <!-- IMÁGENES -->
+      <div class="article-images">
+        <img src="/images/img8.jpg" alt="Fresh Lemons">
+        <img src="/images/img11.png" alt="Biodegradable Food Packaging">
+        <img src="/images/img12.png" alt="Sustainable Eating">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

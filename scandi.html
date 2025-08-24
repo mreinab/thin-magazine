@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARTICLE · THIN MAGAZINE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* SOLO ESTILOS PARA LA PÁGINA DE ARTÍCULO */
+    .article-container {
+      margin-top: 0px;
+      padding: 0px 24px;
+      font-family: 'Roboto', sans-serif;
+      color: #222;
+    }
+
+    .article-header {
+    margin-top: 220px;
+      margin-bottom: 24px;
+    }
+
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .article-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .article-subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .article-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .article-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .article-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-images img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .article-content {
+        grid-template-columns: 1fr;
+      }
+
+      .article-images {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 12px;
+        scrollbar-width: thin;
+      }
+
+      .article-images img {
+        flex: 0 0 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="/images/logotipo.png" alt="Logotipo" class="logo">
+    </a>
+  </div>
+
+  <!-- MENÚ -->
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="interviews.html">Interviews</a>
+    <a href="club.html">Club</a>
+    <a href="issue.html">Issue nº1</a>
+  </nav>
+
+  <!-- CONTENIDO DEL ARTÍCULO -->
+  <main class="article-container">
+
+    <!-- CONTENIDO EN DOS COLUMNAS -->
+    <div class="article-content">
+      <!-- TEXTO -->
+      <div class="article-text">
+    <div class="article-header">
+      <h1 class="article-title">SHAPED BY LIGHT: SCANDINAVIAN FURNITURE DESIGN</h1>
+
+      <h2 class="article-subtitle">by Alice Karpool</h2>
+    </div>
+<p>
+  Scandinavian furniture has always carried with it a quiet strength — a balance between utility and beauty, restraint and warmth. Rooted in the landscapes of the North, these objects are born of necessity yet elevated by design, carrying the essence of light, texture, and form into everyday living.
+</p>
+
+<p>
+  To step into a space shaped by Scandinavian design is to feel calmness rendered tangible. Each chair, table, or lamp is stripped of excess, yet imbued with intention. Materials are chosen not only for their durability but for their honesty: pale woods, natural fibers, soft leathers, and muted tones that echo forests, stone, and the play of Nordic daylight.
+</p>
+
+<p>
+  What distinguishes this tradition is not just the aesthetic minimalism, but the humanism beneath it. Every line responds to the body, every surface considers touch. The designs are not distant objects of admiration, but companions in daily life — resilient, timeless, and quietly elegant.
+</p>
+
+<p>
+  Over the decades, Scandinavian furniture has moved far beyond its regional roots, becoming a global language of simplicity. Yet its essence remains unchanged: a design philosophy that values clarity over clutter, craftsmanship over spectacle, and connection over consumption.
+</p>
+
+<p>
+  In a world often saturated by noise and excess, Scandinavian furniture continues to remind us that less can indeed be more. It is an invitation to slow down, to dwell with objects that carry meaning, and to live in harmony with the spaces we inhabit.
+</p>
+
+      </div>
+
+      <!-- IMÁGENES -->
+      <div class="article-images">
+        <img src="/images/img6.jpg" alt="Fresh Lemons">
+        <img src="/images/img5.jpg" alt="Biodegradable Food Packaging">
+        <img src="/images/img15.jpg" alt="Sustainable Eating">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
