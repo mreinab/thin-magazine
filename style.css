@@ -46,6 +46,7 @@ body {
   text-transform: uppercase;
   border-bottom: 2.5px solid transparent; /* Línea invisible por defecto */
   transition: border-bottom 0.3s ease;  /* Animación suave */
+  font-size: 16px;
 }
 
 .menu a:hover,
@@ -75,7 +76,7 @@ main {
 }
 
 .description {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 26px;
 }
 
@@ -201,7 +202,7 @@ main {
   }
 
 .logo {
-  width: 50px;
+  width: 60px;
   height: auto;
   transform-origin: center center;
   object-fit: contain;
