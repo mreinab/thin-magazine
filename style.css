@@ -236,7 +236,7 @@ body:not(.home) main {
   }
 
 .logo {
-  width: 60px;
+  width: 70px;
   height: auto;
   transform-origin: center center;
   object-fit: contain;
@@ -411,6 +411,7 @@ body:not(.home) main {
   break-inside: avoid;
   margin-bottom: 20px;
   width: 100%;
+  line-height: 1.5rem;
 }
 
 /* Responsive */
@@ -436,6 +437,7 @@ body:not(.home) main {
 
   .header-section .text-block {
     max-width: 100%;
+    line-height: 1rem;
   }
 
   .header-section .date {
