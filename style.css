@@ -46,7 +46,7 @@ body {
   text-transform: uppercase;
   border-bottom: 2.5px solid transparent; /* Línea invisible por defecto */
   transition: border-bottom 0.3s ease;  /* Animación suave */
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .menu a:hover,
