@@ -273,12 +273,13 @@ main {
   }
 
   .panel a {
-    display: block;        /* enlace ocupa todo el ancho del panel */
-    width: 100%;
+    text-decoration: none !important;
+    color: inherit !important;
   }
 
   .panel a .hover-content {
-    position: relative;    /* relativo para flow normal */
+    position: relative;
+    bottom: 10px;
     width: 100%;           /* ocupa todo el ancho del enlace */
     max-width: 100%;
     opacity: 1;            /* siempre visible */
@@ -294,7 +295,11 @@ main {
   }
 
   .hover-content .title {
-    font-size: 1.2rem;
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-decoration: none !important;
+    margin-bottom: 0px;
   }
 
   .hover-content .plus {
@@ -302,7 +307,7 @@ main {
   }
 
   .hover-content .excerpt {
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
   }
 }
