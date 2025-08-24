@@ -25,7 +25,7 @@ body.home main {
   right: 0;
   height: 100vh;
   overflow: hidden;
-  gap: 24px
+  gap: 12px
 }
 
 /* MAIN en ENTREVIEWS o resto de páginas */
@@ -33,11 +33,13 @@ body:not(.home) main {
   position: relative;
   width: calc(100% - 14vw);
   margin-left: auto;
-  padding: 40px;
   height: auto;          /* o min-height: 100vh si quieres ocupar toda la pantalla */
   overflow-y: auto;
 }
 
+main.interviews-container {
+    padding: 40px;
+}
 /* Logotipo fijo */
 .logo-container {
   position: fixed;
@@ -113,7 +115,7 @@ body:not(.home) main {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  gap: 24px;
+  gap: 12px;
 }
 
 .panel {

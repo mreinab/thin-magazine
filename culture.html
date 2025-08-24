@@ -1,15 +1,102 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Título de la página · THIN MAGAZINE</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
-  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CULTURE · THIN MAGAZINE</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* --- Grid Cultura --- */
+  main {
+    padding: 40px 5%;
+  }
+
+
+  main.culture-page {
+    padding: 0px;
+  }
+
+  .grid-container {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .panel-culture {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 24px;
+  }
+
+  .panel-culture img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .panel-culture:hover img {
+    transform: scale(1.001);
+  }
+
+  .panel-content {
+    padding: 16px 0 0 0;
+  }
+
+  .panel-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .panel-content p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    color: #555;
+  }
+
+  .culture-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 12px;
+  }
+
+  /* Responsive */
+  @media(max-width: 768px) {
+    .panel-culture img {
+      height: fit-content;
+    }
+    .panel-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+    .panel-content p {
+      font-size: 0.9rem;
+    }
+      .culture-container {
+    margin-top: 165px;
+    padding-right: 0px;
+    flex-direction: column;
+  }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  }
+</style>
 </head>
-<body>
+<body class="culture-page">
+
   <!-- LOGO -->
   <div class="logo-container">
     <a href="index.html">
@@ -29,15 +116,82 @@
     <a href="issue.html">Issue nº1</a>
   </nav>
 
-  <!-- CONTENIDO DE CADA PÁGINA -->
-  <main>
+  <!-- MAIN CONTENT -->
+  <main class="culture-page">
+
     <span class="top-decor"><img src="/images/top-decor-thin.png"></span>
-    <div class="page-content">
-      <h1>Título de esta sección</h1>
-      <p>
-        Aquí va el contenido de tu página.  
-        A diferencia del home, este `main` tiene scroll vertical normal.
-      </p>
+
+  <div class="culture-container">
+  <div class="culture-text-block">
+      <h1 class="title-interview">CULTURE</h1>
+    </div>
+  <p class="description">
+Exploring the essence of art, heritage, and contemporary culture.
+  </p>
+</div>
+
+    <div class="grid-container">
+      
+      <div class="panel-culture">
+        <a href="culture.html">
+          <img src="/images/culture3.jpg" alt="Cultura">
+        </a>
+        <div class="panel-content">
+          <h3>Entrevista a Valeri Vasi</h3>
+          <p>Descubre lo último en arte y tradiciones.</p>
+        </div>
+      </div>
+
+      <div class="panel-culture">
+        <a href="interviews.html">
+          <img src="/images/img5.jpg" alt="Entrevistas">
+        </a>
+        <div class="panel-content">
+          <h3>Entrevistas</h3>
+          <p>Charlas exclusivas con personalidades destacadas.</p>
+        </div>
+      </div>
+
+      <div class="panel-culture">
+        <a href="club.html">
+          <img src="/images/img3.jpg" alt="Club">
+        </a>
+        <div class="panel-content">
+          <h3>Club</h3>
+          <p>Únete a nuestro club y disfruta beneficios exclusivos.</p>
+        </div>
+      </div>
+
+      <div class="panel-culture">
+        <a href="interviews.html">
+          <img src="/images/culture2.jpg" alt="Entrevistas">
+        </a>
+        <div class="panel-content">
+          <h3>Entrevistas</h3>
+          <p>Charlas exclusivas con personalidades destacadas.</p>
+        </div>
+      </div>
+
+      <div class="panel-culture">
+        <a href="culture.html">
+          <img src="/images/img2.jpg" alt="Cultura">
+        </a>
+        <div class="panel-content">
+          <h3>Cultura</h3>
+          <p>Descubre lo último en arte y tradiciones.</p>
+        </div>
+      </div>
+
+      <div class="panel-culture">
+        <a href="culture.html">
+          <img src="/images/img8.jpg" alt="Cultura">
+        </a>
+        <div class="panel-content">
+          <h3>Cultura</h3>
+          <p>Descubre lo último en arte y tradiciones.</p>
+        </div>
+      </div>
+
     </div>
   </main>
 
