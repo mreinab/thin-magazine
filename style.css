@@ -7,9 +7,36 @@
 
 body {
 font-family: 'Roboto', Helvetica, sans-serif;
-  overflow-y: hidden; /* solo quitamos vertical */
+position: relative;
 }
 
+
+main {
+    position: relative;
+}
+
+body.home main {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 14vw); /* deja espacio para el logo */
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  overflow: hidden;
+  gap: 24px;
+}
+
+/* MAIN en ENTREVIEWS o resto de páginas */
+body:not(.home) main {
+  position: relative;
+  display: block;
+  width: calc(100% - 14vw);
+  margin-left: auto;
+  padding: 40px;
+  height: auto;          /* o min-height: 100vh si quieres ocupar toda la pantalla */
+  overflow-y: hidden;      /* ¡aquí está la clave! */
+}
 
 /* Logotipo fijo */
 .logo-container {
@@ -55,23 +82,12 @@ font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .top-decor {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     padding: 24px;
 }
 
-main {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 14vw); /* lo que sobra del logo */
-  bottom: 0;
-  right: 0;
-  height: 100vh; /* ocupa todo el alto */
-  overflow: hidden; /* no vertical */
-  gap: 24px;
-}
 
 .description-container {
   display: flex;
@@ -187,8 +203,8 @@ main {
 /* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
 
-      main {
-    position: relative;  /* ya no fijo */
+  body.home main {
+    position: relative;  /* ya no fijo en mobile */
     width: 100%;         /* ocupa todo el ancho */
     height: auto;        /* altura según contenido */
     overflow: visible;   /* permite scroll vertical */
@@ -197,10 +213,11 @@ main {
     gap: 16px;
     padding: 32px;
   }
-
+  
   body {
     overflow-y: auto;    /* permite scroll en todo el body */
   }
+
   /* Logo junto al menú hamburguesa */
   .logo-container {
     width: fit-content;
@@ -320,4 +337,107 @@ main {
     font-size: 16px;
     text-align: left;
   }
+}
+
+
+
+/* INTERVIEWS*/
+.interview {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Encabezado */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.header-section .text-block {
+  max-width: 60%;
+}
+
+.header-section .title {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.header-section .date {
+  font-size: 24px;
+  margin: 0;
+  text-align: left;
+}
+
+.header-section .image-block img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Contenido en columnas */
+.content-section {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.content-section p,
+.content-section img {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (min-width: 1400px) {
+  .content-section {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+  }
+
+  .header-section .text-block {
+    max-width: 100%;
+  }
+
+  .header-section .date {
+    text-align: left;
+  }
+
+  .content-section {
+    column-count: 1;
+  }
+}
+
+
+body {
+  overflow: auto; /* mantiene scroll funcional */
+  -ms-overflow-style: none;  /* IE y Edge antiguos */
+  scrollbar-width: none;      /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari y Edge modernos */
+}
+
+/* Si quieres que un contenedor específico tenga scroll pero sin barra */
+.horizontal-scroll, 
+main {
+  overflow: auto;   /* mantiene scroll */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  display: none;
 }
