@@ -15,14 +15,14 @@ body {
 .logo-container {
   position: fixed;
   width: fit-content;
-  left: 10px;
-  top: 50%;
+  left: 0px;
+  top: 48%;
   transform: translateY(-50%);
   padding: 24px;
 }
 
 .logo {
-  height: 89dvh;
+  height: 86dvh;
   width: fit-content;
 }
 
@@ -76,8 +76,8 @@ main {
 }
 
 .description {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* Scroll horizontal */
