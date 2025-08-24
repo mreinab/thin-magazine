@@ -196,7 +196,7 @@ main {
   /* Logo junto al menú hamburguesa */
   .logo-container {
     position: fixed;
-    top: 140px;
+    top: 164px;
     left: 0px;
     z-index: 1002;
   }
@@ -214,7 +214,7 @@ main {
     position: fixed;
     top: 20px;
     right: 20px;
-    font-size: 32px;
+    font-size: 34px;
     cursor: pointer;
     z-index: 1003;
   }
@@ -232,10 +232,12 @@ main {
     background: white;
     transition: right 0.3s ease-in-out;
     z-index: 1001;
+    padding: 40px;
   }
 
   .menu.show {
     right: 0;
+    width: 100%;
   }
 
   .menu a {
